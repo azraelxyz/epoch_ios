@@ -40,10 +40,10 @@
 		EC9E2F9C1ABA992900224E8E /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9E2F821ABA992900224E8E /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EC9E2F9D1ABA992900224E8E /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9E2F841ABA992900224E8E /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EC9E2F9E1ABA992900224E8E /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9E2F851ABA992900224E8E /* GTMOAuth2ViewTouch.xib */; };
-		EC9E2FA81ABA9CF400224E8E /* GTLEpochConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9E2FA11ABA9CF400224E8E /* GTLEpochConstants.m */; };
-		EC9E2FA91ABA9CF400224E8E /* GTLEpochHumanReadableTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9E2FA31ABA9CF400224E8E /* GTLEpochHumanReadableTime.m */; };
-		EC9E2FAA1ABA9CF400224E8E /* GTLQueryEpoch.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9E2FA51ABA9CF400224E8E /* GTLQueryEpoch.m */; };
-		EC9E2FAB1ABA9CF400224E8E /* GTLServiceEpoch.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9E2FA71ABA9CF400224E8E /* GTLServiceEpoch.m */; };
+		ECD2B28B1ABD1CFD00AB6D48 /* GTLEpochConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2B2841ABD1CFD00AB6D48 /* GTLEpochConstants.m */; };
+		ECD2B28C1ABD1CFD00AB6D48 /* GTLEpochHumanReadableTime.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2B2861ABD1CFD00AB6D48 /* GTLEpochHumanReadableTime.m */; };
+		ECD2B28D1ABD1CFD00AB6D48 /* GTLQueryEpoch.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2B2881ABD1CFD00AB6D48 /* GTLQueryEpoch.m */; };
+		ECD2B28E1ABD1CFD00AB6D48 /* GTLServiceEpoch.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2B28A1ABD1CFD00AB6D48 /* GTLServiceEpoch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,15 +121,15 @@
 		EC9E2F831ABA992900224E8E /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
 		EC9E2F841ABA992900224E8E /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
 		EC9E2F851ABA992900224E8E /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
-		EC9E2F9F1ABA9CF400224E8E /* GTLEpoch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLEpoch.h; sourceTree = "<group>"; };
-		EC9E2FA01ABA9CF400224E8E /* GTLEpochConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLEpochConstants.h; sourceTree = "<group>"; };
-		EC9E2FA11ABA9CF400224E8E /* GTLEpochConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLEpochConstants.m; sourceTree = "<group>"; };
-		EC9E2FA21ABA9CF400224E8E /* GTLEpochHumanReadableTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLEpochHumanReadableTime.h; sourceTree = "<group>"; };
-		EC9E2FA31ABA9CF400224E8E /* GTLEpochHumanReadableTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLEpochHumanReadableTime.m; sourceTree = "<group>"; };
-		EC9E2FA41ABA9CF400224E8E /* GTLQueryEpoch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQueryEpoch.h; sourceTree = "<group>"; };
-		EC9E2FA51ABA9CF400224E8E /* GTLQueryEpoch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryEpoch.m; sourceTree = "<group>"; };
-		EC9E2FA61ABA9CF400224E8E /* GTLServiceEpoch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServiceEpoch.h; sourceTree = "<group>"; };
-		EC9E2FA71ABA9CF400224E8E /* GTLServiceEpoch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServiceEpoch.m; sourceTree = "<group>"; };
+		ECD2B2821ABD1CFD00AB6D48 /* GTLEpoch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLEpoch.h; sourceTree = "<group>"; };
+		ECD2B2831ABD1CFD00AB6D48 /* GTLEpochConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLEpochConstants.h; sourceTree = "<group>"; };
+		ECD2B2841ABD1CFD00AB6D48 /* GTLEpochConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLEpochConstants.m; sourceTree = "<group>"; };
+		ECD2B2851ABD1CFD00AB6D48 /* GTLEpochHumanReadableTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLEpochHumanReadableTime.h; sourceTree = "<group>"; };
+		ECD2B2861ABD1CFD00AB6D48 /* GTLEpochHumanReadableTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLEpochHumanReadableTime.m; sourceTree = "<group>"; };
+		ECD2B2871ABD1CFD00AB6D48 /* GTLQueryEpoch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLQueryEpoch.h; sourceTree = "<group>"; };
+		ECD2B2881ABD1CFD00AB6D48 /* GTLQueryEpoch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLQueryEpoch.m; sourceTree = "<group>"; };
+		ECD2B2891ABD1CFD00AB6D48 /* GTLServiceEpoch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLServiceEpoch.h; sourceTree = "<group>"; };
+		ECD2B28A1ABD1CFD00AB6D48 /* GTLServiceEpoch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLServiceEpoch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,15 +216,15 @@
 		EC9E2F4C1ABA961B00224E8E /* Epoch API */ = {
 			isa = PBXGroup;
 			children = (
-				EC9E2F9F1ABA9CF400224E8E /* GTLEpoch.h */,
-				EC9E2FA01ABA9CF400224E8E /* GTLEpochConstants.h */,
-				EC9E2FA11ABA9CF400224E8E /* GTLEpochConstants.m */,
-				EC9E2FA21ABA9CF400224E8E /* GTLEpochHumanReadableTime.h */,
-				EC9E2FA31ABA9CF400224E8E /* GTLEpochHumanReadableTime.m */,
-				EC9E2FA41ABA9CF400224E8E /* GTLQueryEpoch.h */,
-				EC9E2FA51ABA9CF400224E8E /* GTLQueryEpoch.m */,
-				EC9E2FA61ABA9CF400224E8E /* GTLServiceEpoch.h */,
-				EC9E2FA71ABA9CF400224E8E /* GTLServiceEpoch.m */,
+				ECD2B2821ABD1CFD00AB6D48 /* GTLEpoch.h */,
+				ECD2B2831ABD1CFD00AB6D48 /* GTLEpochConstants.h */,
+				ECD2B2841ABD1CFD00AB6D48 /* GTLEpochConstants.m */,
+				ECD2B2851ABD1CFD00AB6D48 /* GTLEpochHumanReadableTime.h */,
+				ECD2B2861ABD1CFD00AB6D48 /* GTLEpochHumanReadableTime.m */,
+				ECD2B2871ABD1CFD00AB6D48 /* GTLQueryEpoch.h */,
+				ECD2B2881ABD1CFD00AB6D48 /* GTLQueryEpoch.m */,
+				ECD2B2891ABD1CFD00AB6D48 /* GTLServiceEpoch.h */,
+				ECD2B28A1ABD1CFD00AB6D48 /* GTLServiceEpoch.m */,
 			);
 			name = "Epoch API";
 			sourceTree = "<group>";
@@ -388,16 +388,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9E2FA81ABA9CF400224E8E /* GTLEpochConstants.m in Sources */,
+				ECD2B28B1ABD1CFD00AB6D48 /* GTLEpochConstants.m in Sources */,
 				EC9E2F9D1ABA992900224E8E /* GTMOAuth2ViewControllerTouch.m in Sources */,
 				EC9E2F8B1ABA992900224E8E /* GTLUploadParameters.m in Sources */,
 				EC9E2F941ABA992900224E8E /* GTMHTTPFetcher.m in Sources */,
-				EC9E2FA91ABA9CF400224E8E /* GTLEpochHumanReadableTime.m in Sources */,
+				ECD2B28C1ABD1CFD00AB6D48 /* GTLEpochHumanReadableTime.m in Sources */,
 				EC9E2F9C1ABA992900224E8E /* GTMOAuth2SignIn.m in Sources */,
 				EC2CFAE71AB5E17300ED809E /* ViewController.swift in Sources */,
 				EC9E2F971ABA992900224E8E /* GTMHTTPUploadFetcher.m in Sources */,
 				EC9E2F961ABA992900224E8E /* GTMHTTPFetchHistory.m in Sources */,
-				EC9E2FAB1ABA9CF400224E8E /* GTLServiceEpoch.m in Sources */,
+				ECD2B28E1ABD1CFD00AB6D48 /* GTLServiceEpoch.m in Sources */,
 				EC9E2F8F1ABA992900224E8E /* GTLFramework.m in Sources */,
 				EC9E2F9A1ABA992900224E8E /* GTMReadMonitorInputStream.m in Sources */,
 				EC9E2F8A1ABA992900224E8E /* GTLBatchResult.m in Sources */,
@@ -413,7 +413,7 @@
 				EC9E2F991ABA992900224E8E /* GTMMIMEDocument.m in Sources */,
 				EC9E2F8D1ABA992900224E8E /* GTLErrorObject.m in Sources */,
 				EC9E2F931ABA992900224E8E /* GTMHTTPFetcherService.m in Sources */,
-				EC9E2FAA1ABA9CF400224E8E /* GTLQueryEpoch.m in Sources */,
+				ECD2B28D1ABD1CFD00AB6D48 /* GTLQueryEpoch.m in Sources */,
 				EC9E2F951ABA992900224E8E /* GTMHTTPFetcherLogging.m in Sources */,
 				EC9E2F871ABA992900224E8E /* GTLQuery.m in Sources */,
 				EC9E2F911ABA992900224E8E /* GTLUtilities.m in Sources */,

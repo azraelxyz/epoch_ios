@@ -16,10 +16,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var readableTime: UILabel!
     
     
+    
     @IBAction func pressConvert(sender: AnyObject) {
-        readableTime.text = epochInput.text
+        self._queryForEpoch()
     }
     
+    var epochHumanReadableTime = [GTLQueryEpoch]()
+    
+    var _service : GTLServiceEpoch?
+    var service : GTLServiceEpoch {
+        if _service != nil {
+            return _service!
+        }
+        _service = GTLServiceEpoch()
+        _service?.retryEnabled = true
+        return _service!
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +44,41 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // MARK: - private methods
+    
     func viewEdit() {
-        //convert button
+        //convert button view
         convertButton.layer.cornerRadius = 8
         convertButton.layer.borderWidth = 2
+    }
+    
+    //query human readable time from google cloud endpoints
+    func _queryForEpoch() {
+        var sec : Int = self.epochInput.text.toInt()!
+        let query = GTLQueryEpoch.queryForGetEpochWithSec(Int64(sec)) as GTLQueryEpoch
+        
+        service.executeQuery(query, completionHandler: { (ticket, response, error) -> Void in
+            if error != nil {
+                self._showErrorDialog(error)
+            } else {
+                let getTime = response as GTLEpochHumanReadableTime
+                if let humanReadableTime = getTime.message {
+                    self.readableTime.text = humanReadableTime
+                }
+            }
+        })
         
     }
-
+    
+    //show error message when something is wrong
+    func _showErrorDialog(error : NSError) {
+        let alertController = UIAlertController(title: "Endpoints error", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+        let defaultAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil)
+        alertController.addAction(defaultAction)
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
 
 }
 
