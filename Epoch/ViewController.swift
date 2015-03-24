@@ -15,13 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var convertButton: UIButton!
     @IBOutlet weak var readableTime: UILabel!
     
-    
-    
     @IBAction func pressConvert(sender: AnyObject) {
-        self._queryForEpoch()
+        //todo judge input text has string or not
+        if self.epochInput.text.isEmpty {
+//            let inputEmpty = "input empty"
+//            self._showErrorDialog(inputEmpty)
+        } else {
+            self._queryForEpoch(Int64(self.epochInput.text.toInt()!))
+        }
+        
+        
     }
-    
-    var epochHumanReadableTime = [GTLQueryEpoch]()
     
     var _service : GTLServiceEpoch?
     var service : GTLServiceEpoch {
@@ -44,6 +48,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
     
     // MARK: - private methods
     
@@ -54,10 +62,8 @@ class ViewController: UIViewController {
     }
     
     //query human readable time from google cloud endpoints
-    func _queryForEpoch() {
-        var sec : Int = self.epochInput.text.toInt()!
+    func _queryForEpoch(sec: Int64) {
         let query = GTLQueryEpoch.queryForGetEpochWithSec(Int64(sec)) as GTLQueryEpoch
-        
         service.executeQuery(query, completionHandler: { (ticket, response, error) -> Void in
             if error != nil {
                 self._showErrorDialog(error)
@@ -68,7 +74,7 @@ class ViewController: UIViewController {
                 }
             }
         })
-        
+
     }
     
     //show error message when something is wrong
@@ -79,6 +85,5 @@ class ViewController: UIViewController {
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-
 }
 
