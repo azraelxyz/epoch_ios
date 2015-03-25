@@ -18,8 +18,7 @@ class ViewController: UIViewController {
     @IBAction func pressConvert(sender: AnyObject) {
         //todo judge input text has string or not
         if self.epochInput.text.isEmpty {
-//            let inputEmpty = "input empty"
-//            self._showErrorDialog(inputEmpty)
+            self.readableTime.text = "please input linux time"
         } else {
             self._queryForEpoch(Int64(self.epochInput.text.toInt()!))
         }
