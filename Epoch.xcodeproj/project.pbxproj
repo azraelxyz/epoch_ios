@@ -57,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC101EF01B24821C004BA5CE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		EC101EF11B24821C004BA5CE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		EC101EF31B24822F004BA5CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		EC2CFADF1AB5E17300ED809E /* Epoch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Epoch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2CFAE31AB5E17300ED809E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC2CFAE41AB5E17300ED809E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -444,6 +447,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				EC2CFAE91AB5E17300ED809E /* Base */,
+				EC101EF01B24821C004BA5CE /* zh-Hant */,
+				EC101EF31B24822F004BA5CE /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -452,6 +457,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EC2CFAEE1AB5E17300ED809E /* Base */,
+				EC101EF11B24821C004BA5CE /* zh-Hant */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

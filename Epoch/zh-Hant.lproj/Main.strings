@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "sec"; ObjectID = "55j-wU-NnE"; */
+"55j-wU-NnE.placeholder" = "sec";
+
+/* Class = "UILabel"; text = "GMT+0"; ObjectID = "Ka6-ND-bYO"; */
+"Ka6-ND-bYO.text" = "GMT+0";
+
+/* Class = "UILabel"; text = "Epoch Time"; ObjectID = "YSZ-hE-zH5"; */
+"YSZ-hE-zH5.text" = "Epoch Time";
+
+/* Class = "UIButton"; normalTitle = "Convert"; ObjectID = "xm9-XO-jFy"; */
+"xm9-XO-jFy.normalTitle" = "轉換";

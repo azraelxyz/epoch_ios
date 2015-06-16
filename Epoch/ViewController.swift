@@ -47,9 +47,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        self.view.endEditing(true)
-    }
+//    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+//        self.view.endEditing(true)
+//    }
     
     
     // MARK: - private methods
@@ -62,12 +62,12 @@ class ViewController: UIViewController {
     
     //query human readable time from google cloud endpoints
     func _queryForEpoch(sec: Int64) {
-        let query = GTLQueryEpoch.queryForGetEpochWithSec(Int64(sec)) as GTLQueryEpoch
+        let query = GTLQueryEpoch.queryForGetEpochWithSec(Int64(sec)) as! GTLQueryEpoch
         service.executeQuery(query, completionHandler: { (ticket, response, error) -> Void in
             if error != nil {
                 self._showErrorDialog(error)
             } else {
-                let getTime = response as GTLEpochHumanReadableTime
+                let getTime = response as! GTLEpochHumanReadableTime
                 if let humanReadableTime = getTime.message {
                     self.readableTime.text = humanReadableTime
                 }
