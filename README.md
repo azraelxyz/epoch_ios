@@ -1,1 +1,1 @@
-This is an iOS app connect to epoch google cloud endpoint (http://easy-epoch.appspot.com/), where source is available in https://bitbucket.org/xwhuang/epoch or https://github.com/azraelxyz/epoch.
+This is an iOS app connect to epoch google cloud endpoint (http://easy-epoch.appspot.com/), where source is available in https://bitbucket.org/am5t/epoch or https://github.com/azraelxyz/epoch.
