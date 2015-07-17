@@ -1,0 +1,1 @@
+This is an iOS app connect to epoch google cloud endpoint (http://easy-epoch.appspot.com/), where source is in https://bitbucket.org/xwhuang/epoch.
